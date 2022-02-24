@@ -8,6 +8,8 @@ const Container = styled.div`
   padding: 2rem;
   background: #000;
   height: 100vh;
+  position: fixed;
+  overflow: hidden;
 `
 
 const Wrapper = styled.div`
