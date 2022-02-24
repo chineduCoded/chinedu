@@ -46,7 +46,7 @@ const Container = styled.div`
 `
 
 const Contact = styled.a`
-  color: ${(color) => color.theme.text};
+  color: ${(color) => (color.click ? color.theme.body : color.theme.text)};
   position: absolute;
   top: 2rem;
   right: calc(1rem + 2vw);
@@ -347,7 +347,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                About.
+                About
               </motion.h2>
             </ABOUT>
             <SKILLS to="skills">
@@ -364,7 +364,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                My Skills.
+                My Skills
               </motion.h2>
             </SKILLS>
           </BottomBar>
