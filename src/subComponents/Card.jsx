@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { Github } from '../components/AllSvgs'
 import { mediaQueries } from '../components/Themes'
@@ -105,7 +104,7 @@ const Footer = styled.footer`
   justify-content: space-between;
   align-items: center;
 `
-const Link = styled(NavLink)`
+const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
   text-decoration: none;
@@ -118,7 +117,7 @@ const Link = styled(NavLink)`
     color: ${(props) => props.theme.body};
   }
 `
-const Git = styled(NavLink)`
+const Git = styled.a`
   color: inherit;
   text-decoration: none;
 
@@ -133,7 +132,7 @@ const item = {
   hidden: { scale: 0 },
   show: { scale: 1, transition: { type: 'spring', duration: 0.5 } },
 }
-//const tags = ["react","gsap","javascript"]
+
 const Card = (props) => {
   const { id, name, description, tags, demo, github } = props.data
   return (
@@ -146,10 +145,10 @@ const Card = (props) => {
         ))}
       </Tags>
       <Footer>
-        <Link to={{ pathname: `${demo}` }} target="_blank">
+        <Link href={demo} target="_blank">
           Visit
         </Link>
-        <Git to={{ pathname: `${github}` }} target="_blank">
+        <Git href={github} target="_blank">
           <Github width={30} height={30} />
         </Git>
       </Footer>

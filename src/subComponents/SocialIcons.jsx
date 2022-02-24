@@ -28,8 +28,8 @@ const Icons = styled.div`
   left: 1rem;
 
       svg{
-        width:20px;
-        height:20px
+        width:23px;
+        height:23px;
       }
 
   `}
