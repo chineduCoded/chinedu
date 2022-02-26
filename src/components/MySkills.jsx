@@ -194,9 +194,7 @@ const MySkills = () => {
             </Desc>
             <Desc>
               <strong>Skills</strong>
-              <p>
-                Html, Css, Js, React, ReduxToolKit, MultiScrew, Firebase etc.
-              </p>
+              <p>Html, Css, Js, React, Redux-ToolKit, MUI, Firebase etc.</p>
             </Desc>
             <Desc>
               <strong>Tools</strong>
